@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PostDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2F363F">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rv_cooment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_comments" />
+
+        <TextView
+            android:id="@+id/post_user"
+            android:layout_width="247dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_detail_title" />
+
+        <TextView
+            android:id="@+id/post_detail_title"
+            android:layout_width="393dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="5dp"
+            android:text="TextView"
+
+            android:textColor="#FFF222"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_detail_img"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/post_detail_img"
+            android:layout_width="412dp"
+            android:layout_height="187dp"
+            android:layout_marginStart="2dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/common_full_open_on_phone" />
+
+        <TextView
+            android:id="@+id/post_details_desc"
+            android:layout_width="421dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+
+
+            android:background="#6A89CC"
+            android:lineSpacingExtra="8dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_user" />
+
+        <ImageView
+            android:id="@+id/post_detail_currentuserimg"
+            android:layout_width="92dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_details_desc"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <EditText
+            android:id="@+id/post_comments"
+            android:layout_width="217dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="Comments.."
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/post_detail_currentuserimg"
+            app:layout_constraintTop_toBottomOf="@+id/post_details_desc" />
+
+        <Button
+            android:id="@+id/post_comment_add"
+            style="@style/Base.V22.Theme.AppCompat.Light"
+            android:layout_width="63dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:background="#6A89CC"
+            android:text="Add"
+            app:layout_constraintStart_toEndOf="@+id/post_comments"
+            app:layout_constraintTop_toTopOf="@+id/post_comments" />
+
+        <ImageView
+            android:id="@+id/post_wroter"
+            android:layout_width="114dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/post_details_desc"
+            app:layout_constraintStart_toEndOf="@+id/post_user"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

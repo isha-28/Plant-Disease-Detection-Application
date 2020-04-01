@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "244351955198",
+    "firebase_url": "https://ekisan-9f4ea.firebaseio.com",
+    "project_id": "ekisan-9f4ea",
+    "storage_bucket": "ekisan-9f4ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244351955198:android:4fc5c6f23a96ca1a7075af",
+        "android_client_info": {
+          "package_name": "com.example.ekisan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244351955198-nu27bhkshlmha8kulld7nf3ubambfqjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ekisan",
+            "certificate_hash": "39cad3bf0c477efe4b8d1434629febd6e1f29889"
+          }
+        },
+        {
+          "client_id": "244351955198-265rs46j10c6fh7k9i9qf631o2r55eei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIAzs2pg-CJa8e5KLnoVTAO_a2mqFpTt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244351955198-265rs46j10c6fh7k9i9qf631o2r55eei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

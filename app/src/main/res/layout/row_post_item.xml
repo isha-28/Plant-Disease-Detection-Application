@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#DAE0E2"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/row_post_image"
+        android:layout_width="416dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="8dp"
+        android:background="#DAE0E2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/row_post_title"
+        android:layout_width="284dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="28dp"
+
+        android:text="TextView"
+        android:textColor="#4C4B4B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/row_post_prfile_imh"
+        android:layout_width="79dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/row_post_image1"
+        android:layout_width="444dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/row_post_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/row_post_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+</androidx.constraintlayout.widget.ConstraintLayout>
